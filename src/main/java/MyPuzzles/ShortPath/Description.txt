@@ -1,0 +1,5 @@
+Write a method takes an int array MxN and returns int.
+The array represents a map of city where empty cells marked as 0, buildings as 1, start position as 2 and
+destination as 3. Method have to return shortest distance between start and destination.
+You can move only in 4 directions(up, down, left, right).
+If it's impossible to reach the destination method must return -1.
