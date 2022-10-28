@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private final static String fileName = "835 Image Overlap";
+    private final static String fileName = "49 Group Anagrams";
 
     public static void main(String[] args) throws IOException {
 
