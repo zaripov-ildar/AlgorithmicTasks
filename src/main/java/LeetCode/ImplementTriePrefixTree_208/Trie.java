@@ -1,6 +1,6 @@
 package LeetCode.ImplementTriePrefixTree_208;
 
-class Trie {
+public class Trie {
     private final Trie[] arr;
     private boolean endOfWord;
 
