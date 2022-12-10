@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private final static String fileName = "2035 Partition Array Into Two Arrays to Minimize Sum Difference";
+    private final static String fileName = "1339 Maximum Product of Splitted Binary Tree";
 
     public static void main(String[] args) throws IOException {
 
