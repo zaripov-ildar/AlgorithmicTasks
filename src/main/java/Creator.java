@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private final static String fileName = "1339 Maximum Product of Splitted Binary Tree";
+    private final static String fileName = "797 All Paths From Source to Target";
 
     public static void main(String[] args) throws IOException {
 

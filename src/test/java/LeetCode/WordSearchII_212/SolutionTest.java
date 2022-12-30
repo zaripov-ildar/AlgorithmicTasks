@@ -1,5 +1,6 @@
 package LeetCode.WordSearchII_212;
 
+import LeetCode.HandsomeMethods;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -62,16 +63,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     void test(char[][] input, String[] words, List<String> expected) {
-        boolean result = assertListEquals(expected, solution.findWords(input, words));
+        boolean result = HandsomeMethods.assertListEquals(expected, solution.findWords(input, words));
         assertTrue(result);
     }
-
-    private boolean assertListEquals(List<String> l1, List<String> l2) {
-        Collections.sort(l1);
-        Collections.sort(l2);
-        System.out.println(l1);
-        System.out.println(l2);
-        return l1.containsAll(l2) && l2.containsAll(l1) && l1.size() == l2.size();
-    }
-
 }
