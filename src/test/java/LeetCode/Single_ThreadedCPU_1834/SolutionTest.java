@@ -26,10 +26,10 @@ class SolutionTest {
         assertArrayEquals(exp, solution.getOrder(in));
     }
 
-    @ParameterizedTest
-    @MethodSource("testArguments")
-    void testTime(int[][] in, int[] exp) {
-        Timer timer = new Timer();
-        timer.compareFunctions(()->solution.getOrder2(in) ,()-> solution.getOrder(in));
-    }
+//    @ParameterizedTest
+//    @MethodSource("testArguments")
+//    void testTime(int[][] in, int[] exp) {
+//        Timer timer = new Timer();
+//        timer.compareFunctions(()->solution.getOrder2(in) ,()-> solution.getOrder(in));
+//    }
 }

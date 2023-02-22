@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
 
     Solution solution = new Solution();
-    Timer timer = new Timer();
+
 
     private static Stream<Arguments> testArguments() {
         return Stream.of(
@@ -131,11 +131,11 @@ class SolutionTest {
         assertEquals(exp, solution.minFallingPathSum2(in));
     }
 
-    @ParameterizedTest
-    @MethodSource("testArguments")
-    void timeTest(int[][] in, int exp) {
-        System.out.println("");
-        timer.compareFunctions(100_000, () -> solution.minFallingPathSum1(in), () -> solution.minFallingPathSum2(in));
-
-    }
+//    @ParameterizedTest
+//    @MethodSource("testArguments")
+//    void timeTest(int[][] in, int exp) {
+//        Timer timer = new Timer();
+//        System.out.println("");
+//        timer.compareFunctions(100_000, () -> solution.minFallingPathSum1(in), () -> solution.minFallingPathSum2(in));
+//    }
 }

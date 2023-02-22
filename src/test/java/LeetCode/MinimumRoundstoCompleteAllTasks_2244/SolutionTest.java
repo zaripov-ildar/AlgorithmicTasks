@@ -20,16 +20,16 @@ class SolutionTest {
         );
     }
 
-//    @ParameterizedTest
-//    @MethodSource("testArguments")
-//    void test(int[] in, int expected) {
-//        assertEquals(expected, solution.minimumRounds(in));
-//    }
-
     @ParameterizedTest
     @MethodSource("testArguments")
-    void timeTest(int[] in, int expected) {
-        Timer timer = new Timer();
-        timer.compareFunctions(() -> solution.minimumRounds(in), () -> solution.minimumRounds2(in));
+    void test(int[] in, int expected) {
+        assertEquals(expected, solution.minimumRounds(in));
     }
+
+//    @ParameterizedTest
+//    @MethodSource("testArguments")
+//    void timeTest(int[] in, int expected) {
+//        Timer timer = new Timer();
+//        timer.compareFunctions(() -> solution.minimumRounds(in), () -> solution.minimumRounds2(in));
+//    }
 }

@@ -27,11 +27,11 @@ class SolutionTest {
         assertEquals(expected, solution.maxPoints(points));
     }
 
-    @ParameterizedTest
-    @MethodSource("testArguments")
-    void timeTest(int[][] points, int expected) {
-        Timer timer = new Timer();
-        timer.compareFunctions(()->solution.maxPoints2(points),
-                ()->solution.maxPoints(points));
-    }
+//    @ParameterizedTest
+//    @MethodSource("testArguments")
+//    void timeTest(int[][] points, int expected) {
+//        Timer timer = new Timer();
+//        timer.compareFunctions(()->solution.maxPoints2(points),
+//                ()->solution.maxPoints(points));
+//    }
 }

@@ -37,13 +37,13 @@ class SolutionTest {
         assertEquals(expected, solution.maxIceCream3(cost, coins));
     }
 
-    @ParameterizedTest
-    @MethodSource("testArguments")
-    void timerTest(int[] cost, int coins, int expected) {
-        Timer timer = new Timer();
-        timer.compareFunctions(()-> solution.maxIceCream(cost, coins),
-                ()-> solution.maxIceCream2(cost, coins),
-                ()-> solution.maxIceCream3(cost,coins));
-    }
+//    @ParameterizedTest
+//    @MethodSource("testArguments")
+//    void timerTest(int[] cost, int coins, int expected) {
+//        Timer timer = new Timer();
+//        timer.compareFunctions(()-> solution.maxIceCream(cost, coins),
+//                ()-> solution.maxIceCream2(cost, coins),
+//                ()-> solution.maxIceCream3(cost,coins));
+//    }
 
 }
