@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private final static String fileName = "3 Yandex task2";
+    private final static String fileName = "875 Koko Eating Bananas";
 
     public static void main(String[] args) throws IOException {
 
