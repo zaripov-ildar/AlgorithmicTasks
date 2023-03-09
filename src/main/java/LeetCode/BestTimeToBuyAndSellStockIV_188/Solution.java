@@ -17,7 +17,7 @@ class Solution {
             buy[0] = Math.max(buy[0], i * -1);
             sell[0] = Math.max(sell[0], buy[0] + i);
             System.out.println("buy[0]="+buy[0] + "\tsell="+sell[0]);
-            for (int j = 1; j < k; j++) { // The i-th time buy & sell depens on the (i - 1)-th time buy & sell
+            for (int j = 1; j < k; j++) { // The i-th time buy & sell depends on the (i - 1)-th time buy & sell
                 buy[j] = Math.max(buy[j], sell[j - 1] - i);
                 System.out.println(Arrays.toString(buy));
                 sell[j] = Math.max(sell[j], buy[j] + i);
