@@ -1,6 +1,8 @@
 package LeetCode.LinkedListCycleII_142;
 
 
+import LeetCode.ListNode;
+
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode left = head;

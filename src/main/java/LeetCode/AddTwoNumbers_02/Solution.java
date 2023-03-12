@@ -1,5 +1,7 @@
 package LeetCode.AddTwoNumbers_02;
 
+import LeetCode.ListNode;
+
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode();
