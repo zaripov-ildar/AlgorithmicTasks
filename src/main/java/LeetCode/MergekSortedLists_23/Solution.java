@@ -2,34 +2,22 @@ package LeetCode.MergekSortedLists_23;
 
 import LeetCode.ListNode;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Solution {
-//    public ListNode mergeKLists(ListNode[] lists) {
-//        ListNode result = new ListNode();
-//        if (lists.length == 0) {
-//            return null;
-//        }
-//        ListNode curr = result;
-//        int index;
-//        while ((index = getIndexOfMin(lists)) != -1) {
-//            curr.next = new ListNode(lists[index].val);
-//            curr = curr.next;
-//            lists[index] = lists[index].next;
-//
-//        }
-//        return result.next;
-//    }
-//
-//    private int getIndexOfMin(ListNode[] lists) {
-//        int result = -1;
-//        int min = Integer.MAX_VALUE;
-//        for (int i = 0; i < lists.length; i++) {
-//            if (lists[i] != null && lists[i].val < min) {
-//                min = lists[i].val;
-//                result = i;
-//            }
-//        }
-//        return result;
-//    }
+    public ListNode mergeKLists2(ListNode[] lists) {
+        if (lists == null || lists.length == 0) {
+            return null;
+        }
+        Queue<ListNode> queue = new LinkedList<>(Arrays.asList(lists));
+        while (queue.size() > 1) {
+            queue.add(mergeTwoLists(queue.poll(), queue.poll()));
+        }
+        return queue.poll();
+    }
+
 
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) {

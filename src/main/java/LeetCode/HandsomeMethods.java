@@ -1,15 +1,56 @@
 package LeetCode;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class HandsomeMethods {
+
+    public static int[] getRandomIntArray(int length) {
+        int[] result = new int[length];
+        Random rnd = new Random();
+        for (int i = 0; i < length; i++) {
+            result[i] = rnd.nextInt();
+        }
+        return result;
+    }
+
+    public static int[] getSortedRandomArray(int length) {
+        int[] result = getRandomIntArray(length);
+        Arrays.sort(result);
+        return result;
+    }
+
+    public static int[] mergeTwoSortedArrays(int[] foo, int[] bar) {
+
+        int fooLength = foo.length;
+        int barLength = bar.length;
+
+        int[] merged = new int[fooLength + barLength];
+
+        int fooPosition, barPosition, mergedPosition;
+        fooPosition = barPosition = mergedPosition = 0;
+
+        while (fooPosition < fooLength && barPosition < barLength) {
+            if (foo[fooPosition] < bar[barPosition]) {
+                merged[mergedPosition++] = foo[fooPosition++];
+            } else {
+                merged[mergedPosition++] = bar[barPosition++];
+            }
+        }
+
+        while (fooPosition < fooLength) {
+            merged[mergedPosition++] = foo[fooPosition++];
+        }
+
+        while (barPosition < barLength) {
+            merged[mergedPosition++] = bar[barPosition++];
+        }
+
+        return merged;
+    }
+
     public static boolean assertListEquals(List<String> l1, List<String> l2) {
         Collections.sort(l1);
         Collections.sort(l2);
-        System.out.println(l1);
-        System.out.println(l2);
         return new HashSet<>(l1).containsAll(l2) && new HashSet<>(l2).containsAll(l1) && l1.size() == l2.size();
     }
 
@@ -23,18 +64,54 @@ public class HandsomeMethods {
         return head;
     }
 
+    public static TreeNode createTreeNode(Integer[] values) {
+        Queue<TreeNode> tree = new LinkedList<>();
+        Iterator<Integer> iterator = Arrays.stream(values).iterator();
+        TreeNode head = new TreeNode(iterator.next());
+        tree.add(head);
+        while (iterator.hasNext()) {
+            TreeNode node = tree.poll();
+            if (node != null) {
+                node.left = createNode(iterator);
+                tree.add(node.left);
+                node.right = createNode(iterator);
+                tree.add(node.right);
+            }
+        }
+        return head;
+    }
+
+    private static TreeNode createNode(Iterator<Integer> iterator) {
+        if (iterator.hasNext()) {
+            Integer temp = iterator.next();
+            if (temp != null) {
+                return new TreeNode(temp);
+            }
+        }
+        return null;
+    }
+
+    private static void insert(List<TreeNode> tree, Integer v) {
+        if (v == null) return;
+        int N = tree.size();
+        TreeNode node = new TreeNode(v);
+        tree.add(node);
+        if (N % 2 == 1)
+            tree.get((N - 1) / 2).left = node;
+        else
+            tree.get((N - 1) / 2).right = node;
+    }
+
     public static boolean listNodeEquals(ListNode head1, ListNode head2) {
         ListNode l1 = head1;
         ListNode l2 = head2;
         while (l1 != null && l2 != null) {
-            System.out.println(l1.val + "<<>>" + l2.val);
             if (l1.val != l2.val) {
                 return false;
             }
             l1 = l1.next;
             l2 = l2.next;
         }
-
         return l1 == null && l2 == null;
     }
 }

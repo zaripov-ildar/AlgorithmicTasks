@@ -1,6 +1,6 @@
 package LeetCode.BinaryTreeMaximumPathSum_124;
 
-import LeetCode.MaximumProductofSplittedBinaryTree_1339.TreeNode;
+import LeetCode.TreeNode;
 
 class Solution {
 //    private int max;

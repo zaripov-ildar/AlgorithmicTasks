@@ -1,6 +1,6 @@
 package LeetCode.BinaryTreePreorderTraversal_144;
 
-import LeetCode.MaximumProductofSplittedBinaryTree_1339.TreeNode;
+import LeetCode.TreeNode;
 
 import java.util.LinkedList;
 import java.util.List;

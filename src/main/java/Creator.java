@@ -3,36 +3,26 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private final static String fileName = "23 Merge k Sorted Lists";
+    private static final String fileName = "919. Complete Binary Tree Inserter";
 
     public static void main(String[] args) throws IOException {
-
         String packageName = getPackageName();
-        Path classDir = getPath("main", packageName);
+
+        String solutionFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Solution.txt"));
+        Path solutionClassDir = getPath("main", packageName);
+        createFile(solutionClassDir, "Solution.java", String.format(solutionFilePattern, packageName));
+
+
+        String testFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/TestArguments.txt"));
         Path testDir = getPath("test", packageName);
-        String packageRow = "package LeetCode." + packageName + ";\n\n";
-        String solutionFile = packageRow +
-                """
-                        class Solution {
-                                        
-                        }
-                        """;
-        String testFile = packageRow + Files.readString(Path.of("src/main/java/CodeTemplates/TestArguments.txt"));
-        createFile(classDir, "Solution.java", solutionFile);
-        createFile(testDir, "SolutionTest.java", testFile);
+        createFile(testDir, "SolutionTest.java", String.format(testFilePattern, packageName));
 
-        createFile(classDir, getTXTFileName(), "");
+        String markdownFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Task.md"));
+        createFile(solutionClassDir,"Task.md", String.format(markdownFilePattern, fileName));
 
 
     }
 
-    private static String getTXTFileName() {
-        String[] t = fileName.split(" ", 2);
-        return t[0] +
-                ". " +
-                t[1] +
-                ".txt";
-    }
 
     private static void createFile(Path dir, String fileName, String textOfFile) throws IOException {
         Files.createDirectories(dir);
@@ -46,7 +36,8 @@ public class Creator {
     }
 
     private static String getPackageName() {
-        String[] tokens = fileName.split(" ");
+        String temp = fileName.replace(".", "");
+        String[] tokens = temp.split(" ");
         StringBuilder packageName = new StringBuilder(tokens.length);
         for (int i = 1; i < tokens.length; i++) {
             packageName.append(tokens[i]);

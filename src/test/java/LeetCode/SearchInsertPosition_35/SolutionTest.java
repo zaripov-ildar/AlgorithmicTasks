@@ -29,15 +29,15 @@ class SolutionTest {
         assertEquals(expected, solution.searchInsert(nums, target));
     }
 
-//    @ParameterizedTest
-//    @MethodSource("testArguments")
-//    void timerTest(int[] nums, int target, int expected){
-//        Timer timer = new Timer();
-//        timer.compareFunctions(
-//                500_000_000,
-//                ()-> solution.searchInsert(nums, target),
-//                ()-> solution.searchInsert2(nums, target)
-//
-//        );
-//    }
+    @ParameterizedTest
+    @MethodSource("testArguments")
+    void timerTest(int[] nums, int target, int expected){
+        Timer timer = new Timer();
+        timer.compareFunctions(
+                500_000_000,
+                ()-> solution.searchInsert(nums, target),
+                ()-> solution.searchInsert2(nums, target)
+
+        );
+    }
 }

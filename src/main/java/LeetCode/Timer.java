@@ -3,8 +3,8 @@ package LeetCode;
 import java.util.Arrays;
 
 public class Timer {
-    int WARM = 10_000_000;
-    int EXECUTIONS = 10_000_000;
+    int WARM = 50_000;
+    int EXECUTIONS = 50_000;
 
 
     public void compareFunctions(int executions, Runnable... methods) {
@@ -22,6 +22,7 @@ public class Timer {
         for (int i = 0; i < WARM; i++) {
             Arrays.stream(methods).forEach(Runnable::run);
         }
+        System.out.println("Warming is finished");
     }
 
     private void execute(Runnable method) {

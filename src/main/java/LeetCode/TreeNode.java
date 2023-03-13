@@ -1,14 +1,14 @@
-package LeetCode.MaximumProductofSplittedBinaryTree_1339;
+package LeetCode;
 
 public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
 
-    TreeNode() {
+    public TreeNode() {
     }
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
     }
 
