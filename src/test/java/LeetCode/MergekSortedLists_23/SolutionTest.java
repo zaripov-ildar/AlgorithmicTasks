@@ -1,5 +1,6 @@
 package LeetCode.MergekSortedLists_23;
 
+import LeetCode.HandsomeMethods;
 import LeetCode.ListNode;
 import LeetCode.Timer;
 import org.junit.jupiter.api.Test;
@@ -46,14 +47,14 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     void test1(ListNode[] lists, ListNode expected) {
-        assertTrue(listNodeEquals(expected, solution.mergeKLists2(lists)));
+        assertTrue(HandsomeMethods.equals(expected, solution.mergeKLists2(lists)));
 
     }
 
     @ParameterizedTest
     @MethodSource("testArguments")
     void test2(ListNode[] lists, ListNode expected) {
-        assertTrue(listNodeEquals(expected, solution.mergeKLists(lists)));
+        assertTrue(HandsomeMethods.equals(expected, solution.mergeKLists(lists)));
     }
 
     @Test

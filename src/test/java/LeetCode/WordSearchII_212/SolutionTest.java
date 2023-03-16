@@ -7,7 +7,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -63,7 +62,7 @@ class SolutionTest {
     @ParameterizedTest
     @MethodSource("testArguments")
     void test(char[][] input, String[] words, List<String> expected) {
-        boolean result = HandsomeMethods.assertListEquals(expected, solution.findWords(input, words));
+        boolean result = HandsomeMethods.equals(expected, solution.findWords(input, words));
         assertTrue(result);
     }
 }

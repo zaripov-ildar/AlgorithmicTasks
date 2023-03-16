@@ -48,7 +48,7 @@ public class HandsomeMethods {
         return merged;
     }
 
-    public static boolean assertListEquals(List<String> l1, List<String> l2) {
+    public static boolean equals(List<String> l1, List<String> l2) {
         Collections.sort(l1);
         Collections.sort(l2);
         return new HashSet<>(l1).containsAll(l2) && new HashSet<>(l2).containsAll(l1) && l1.size() == l2.size();
@@ -91,6 +91,7 @@ public class HandsomeMethods {
         return null;
     }
 
+
     private static void insert(List<TreeNode> tree, Integer v) {
         if (v == null) return;
         int N = tree.size();
@@ -102,7 +103,25 @@ public class HandsomeMethods {
             tree.get((N - 1) / 2).right = node;
     }
 
-    public static boolean listNodeEquals(ListNode head1, ListNode head2) {
+    public static boolean equals(TreeNode t1, TreeNode t2) {
+        if (t1 == null ^ t2 == null) {
+            return false;
+        }
+        if (t1 == null) {
+            return true;
+        }
+
+        if (t1.val != t2.val) {
+            return false;
+        }
+
+        return equals(t1.left, t2.left) &&
+                equals(t1.right, t2.right);
+
+
+    }
+
+    public static boolean equals(ListNode head1, ListNode head2) {
         ListNode l1 = head1;
         ListNode l2 = head2;
         while (l1 != null && l2 != null) {

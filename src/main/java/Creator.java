@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "129. Sum Root to Leaf Numbers";
+    private static final String fileName = "106. Construct Binary Tree from Inorder and Postorder Traversal";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
@@ -18,7 +18,7 @@ public class Creator {
         createFile(testDir, "SolutionTest.java", String.format(testFilePattern, packageName));
 
         String markdownFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Task.md"));
-        createFile(solutionClassDir,"Task.md", String.format(markdownFilePattern, fileName));
+        createFile(solutionClassDir, "Task.md", String.format(markdownFilePattern, fileName));
 
 
     }
