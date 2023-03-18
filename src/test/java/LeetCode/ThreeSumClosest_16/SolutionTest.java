@@ -15,6 +15,7 @@ class SolutionTest {
     static Stream<Arguments> testArguments(){
         return Stream.of(
                 Arguments.of(new int[] {2,3,8,9,10}, 16, 15),
+                Arguments.of(new int[] {0,3,97,102,200}, 300, 300),
                 Arguments.of(new int[] {-1,2,1,-4}, 1, 2),
                 Arguments.of(new int[] {-1,2,1,-4}, -5, -4),
                 Arguments.of(new int[] {0,0,0}, 1, 0),

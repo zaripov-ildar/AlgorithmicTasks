@@ -13,7 +13,7 @@ class Solution {
         int minDif = Integer.MAX_VALUE;
         while (left < right - 1) {
             int tempSum = nums[left] + nums[right];
-            int midValue = binary(nums, target - tempSum, left+1, right-1);
+            int midValue = binary(nums, target - tempSum, left + 1, right - 1);
             tempSum += midValue;
             int dif = Math.abs(target - tempSum);
 
@@ -54,3 +54,4 @@ class Solution {
         return bestRes;
     }
 }
+

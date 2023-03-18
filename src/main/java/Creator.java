@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "106. Construct Binary Tree from Inorder and Postorder Traversal";
+    private static final String fileName = "1472. Design Browser History";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
