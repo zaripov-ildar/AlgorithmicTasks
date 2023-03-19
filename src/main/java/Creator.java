@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "1472. Design Browser History";
+    private static final String fileName = "211. Design Add and Search Words Data Structure";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
