@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "1319. Number of Operations to Make Network Connected";
+    private static final String fileName = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
@@ -11,7 +11,6 @@ public class Creator {
         String solutionFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Solution.txt"));
         Path solutionClassDir = getPath("main", packageName);
         createFile(solutionClassDir, "Solution.java", String.format(solutionFilePattern, packageName));
-
 
         String testFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/TestArguments.txt"));
         Path testDir = getPath("test", packageName);
