@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "1466. Reorder Routes to Make All Paths Lead to the City Zero";
+    private static final String fileName = "2316. Count Unreachable Pairs of Nodes in an Undirected Graph";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
