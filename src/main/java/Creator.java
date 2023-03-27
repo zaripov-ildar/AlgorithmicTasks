@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "2360. Longest Cycle in a Graph";
+    private static final String fileName = "64. Minimum Path Sum";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
