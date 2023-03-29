@@ -1,4 +1,4 @@
-<h3>413. Arithmetic Slices</h3>
+### Arithmetic Slices
 
 <span style="color:yellow">Medium</span>
 
@@ -15,19 +15,19 @@ A subarray is a contiguous subsequence of the array.
 
 Example 1:
 
-Input: nums = [1,2,3,4]
-Output: 3
-Explanation: We have 3 arithmetic slices in nums: [1, 2, 3], [2, 3, 4] and [1,2,3,4] itself.
+    Input: nums = [1,2,3,4]
+    Output: 3
+    Explanation: We have 3 arithmetic slices in nums: [1, 2, 3], [2, 3, 4] and [1,2,3,4] itself.
 
 Example 2:
 
-Input: nums = [1]
-Output: 0
+    Input: nums = [1]
+    Output: 0
 
 
 
 Constraints:
 
-    1 <= nums.length <= 5000
-    -1000 <= nums[i] <= 1000
+> - 1 <= nums.length <= 5000
+> - 1000 <= nums[i] <= 1000
 

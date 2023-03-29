@@ -1,4 +1,4 @@
-<h3>797. All Paths From Source to Target</h3>
+### 797. All Paths From Source to Target
 
 <span style="color:yellow">Medium</span>
 

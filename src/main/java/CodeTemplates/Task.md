@@ -1,3 +1,3 @@
-<h3>%s</h3>
+### %s
 
 <span style="color:"></span>

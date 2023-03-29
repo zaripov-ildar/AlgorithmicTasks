@@ -1,4 +1,4 @@
-<h3>121. Best Time to Buy and Sell Stock</h3>
+### 121. Best Time to Buy and Sell Stock
 
 <span style="color:green">Easy</span>
 

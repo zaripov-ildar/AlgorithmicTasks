@@ -1,4 +1,4 @@
-<h3>1014. Best Sightseeing Pair</h3>
+### Best Sightseeing Pair
 
 <span style="color:yellow">Medium</span>
 

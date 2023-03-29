@@ -1,4 +1,4 @@
-<h3>2. Add two numbers</h3>
+### Add two numbers
 
 <span style="color:yellow">Medium</span>
 

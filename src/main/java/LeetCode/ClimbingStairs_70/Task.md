@@ -1,4 +1,4 @@
-<h3>70. Climbing Stairs</h3>
+### 70. Climbing Stairs
 
 <span style="color:green">Easy</span>
 

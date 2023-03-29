@@ -1,4 +1,4 @@
-<h3>122. Best Time to Buy and Sell Stock II</h3>
+### 122. Best Time to Buy and Sell Stock II
 
 <span style="color:yellow">Medium</span>
 
