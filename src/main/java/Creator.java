@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "64. Minimum Path Sum";
+    private static final String fileName = "704. Binary Search";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
