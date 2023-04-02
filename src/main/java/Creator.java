@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "704. Binary Search";
+    private static final String fileName = "2300. Successful Pairs of Spells and Potions";
 
     public static void main(String[] args) throws IOException {
         String packageName = getPackageName();
