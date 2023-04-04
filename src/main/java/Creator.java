@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "881. Boats to Save People";
+    private static final String fileName = "2405. Optimal Partition of String";
 
     public static void main(String[] args) throws IOException {
 	String packageName = getPackageName();
