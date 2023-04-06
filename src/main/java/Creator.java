@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-    private static final String fileName = "2439. Minimize Maximum of Array";
+    private static final String fileName = "1254. Number of Closed Islands";
 
     public static void main(String[] args) throws IOException {
 	String packageName = getPackageName();
