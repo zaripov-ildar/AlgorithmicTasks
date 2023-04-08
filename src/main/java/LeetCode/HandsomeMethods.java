@@ -15,12 +15,12 @@ public class HandsomeMethods {
     }
 
     public static int[] getRandomIntArray(int length) {
-        int[] result = new int[length];
-        Random rnd = new Random();
-        for (int i = 0; i < length; i++) {
-            result[i] = rnd.nextInt();
-        }
-        return result;
+	int[] result = new int[length];
+	Random rnd = new Random();
+	for (int i = 0; i < length; i++) {
+	    result[i] = rnd.nextInt();
+	}
+	return result;
     }
 
     public static int[] getSortedRandomArray(int length) {
@@ -82,16 +82,16 @@ public class HandsomeMethods {
 	while (iterator.hasNext()) {
 	    TreeNode node = tree.poll();
 	    if (node != null) {
-		node.left = createNode(iterator);
+		node.left = createTreeNode(iterator);
 		tree.add(node.left);
-		node.right = createNode(iterator);
+		node.right = createTreeNode(iterator);
 		tree.add(node.right);
 	    }
 	}
 	return head;
     }
 
-    private static TreeNode createNode(Iterator<Integer> iterator) {
+    private static TreeNode createTreeNode(Iterator<Integer> iterator) {
 	if (iterator.hasNext()) {
 	    Integer temp = iterator.next();
 	    if (temp != null) {
@@ -141,4 +141,62 @@ public class HandsomeMethods {
 	}
 	return l1 == null && l2 == null;
     }
+
+    public static Node createNode(int[][] adjList) {
+	Map<Integer, Node> map = new HashMap<>();
+	for (int i = 0; i < adjList.length; i++) {
+	    map.put(i + 1, new Node(i + 1));
+	}
+	for (int key : map.keySet()) {
+	    for (int i : adjList[key-1]) {
+		Node neighbor = map.get(i);
+		map.get(key).neighbors.add(neighbor);
+	    }
+	}
+	return map.get(1);
+    }
+
+    public static boolean equals(Node n1, Node n2) {
+	Map<Integer, List<Integer>> map1 = new HashMap<>();
+	Map<Integer, List<Integer>> map2 = new HashMap<>();
+	fillMapByNode(map1, n1);
+	fillMapByNode(map2, n2);
+	System.out.println(map1);
+	System.out.println(map2);
+	return map1.keySet().equals(map2.keySet())
+		&& valuesEqual(map1, map2);
+    }
+
+    private static void fillMapByNode(Map<Integer, List<Integer>> map, Node n1) {
+	if (map.containsKey(n1.val)) {
+	    return;
+	}
+	map.put(n1.val, new ArrayList<>());
+	for(Node node: n1.neighbors) {
+	    map.get(n1.val).add(node.val);
+	    fillMapByNode(map, node);
+	}
+	
+    }
+
+    private static boolean valuesEqual(Map<Integer, List<Integer>> map1, Map<Integer, List<Integer>> map2) {
+	for (int key : map1.keySet()) {
+	    List<Integer> l1 = map1.get(key);
+	    List<Integer> l2 = map2.get(key);
+	    if (!listNodeEquals(l1, l2)) {
+		return false;
+	    }
+	}
+	return true;
+    }
+
+    private static boolean listNodeEquals(List<Integer> l1, List<Integer> l2) {
+	if (l1.size() != l2.size()) {
+	    return false;
+	}
+	Collections.sort(l1);
+	Collections.sort(l2);	
+	return l1.equals(l2);
+    }
 }
+
