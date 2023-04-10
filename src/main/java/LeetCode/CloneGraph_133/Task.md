@@ -1,6 +1,6 @@
 ### 133. Clone Graph
 
-<span style="background-color:">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Given a reference of a node in a connected undirected graph.
 

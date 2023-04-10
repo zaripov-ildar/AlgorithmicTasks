@@ -1,6 +1,6 @@
 <h3>2360. Longest Cycle in a Graph</h3>
 
-<span style="color:red">Hard</span>
+<span style="background-color:red; color:white">Hard</span>
 
 You are given a directed graph of n nodes numbered from 0 to n - 1, where each node has at most one outgoing edge.
 

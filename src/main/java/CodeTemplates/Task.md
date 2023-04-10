@@ -1,3 +1,3 @@
 ### %s
 
-<span style="color:"></span>
+<span style="background-color:; color:"></span>

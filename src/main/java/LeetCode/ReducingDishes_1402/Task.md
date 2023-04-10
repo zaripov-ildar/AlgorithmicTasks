@@ -1,6 +1,6 @@
 ### 1402. Reducing Dishes
 
-<span style="color:red">Hard</span>
+<span style="background-color:red; color:white">Hard</span>
 
 A chef has collected data on the satisfaction level of his n dishes. Chef can cook any dish in 1 unit of time.
 

@@ -1,6 +1,6 @@
 <h3>101. Symmetric Tree</h3>
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
 

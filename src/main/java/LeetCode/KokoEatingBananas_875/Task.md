@@ -1,6 +1,6 @@
 <h3>875. Koko Eating Bananas</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Koko loves to eat bananas. There are n piles of bananas, the i<sup>th</sup> pile has piles[i] bananas. The guards have
 gone and will come back in h hours.

@@ -1,6 +1,6 @@
 ### 122. Best Time to Buy and Sell Stock II
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
 

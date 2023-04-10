@@ -1,6 +1,6 @@
 <h3>129. Sum Root to Leaf Numbers</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 You are given the root of a binary tree containing digits from 0 to 9 only.
 

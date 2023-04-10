@@ -1,6 +1,6 @@
 <h3>1319. Number of Operations to Make Network Connected</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 There are n computers numbered from 0 to n - 1 connected by ethernet cables connections forming a network where connections[i] = [a<sub>i</sub>, b<sub>i</sub>] represents a connection between computers a<sub>i</sub> and b<sub>i</sub>. Any computer can reach any other computer directly or indirectly through the network.
 

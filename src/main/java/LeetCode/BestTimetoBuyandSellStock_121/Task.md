@@ -1,6 +1,6 @@
 ### 121. Best Time to Buy and Sell Stock
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
 

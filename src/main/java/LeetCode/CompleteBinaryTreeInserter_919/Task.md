@@ -1,6 +1,6 @@
 <h3>919. Complete Binary Tree Inserter</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
 

@@ -1,6 +1,6 @@
 <h3>21. Merge Two Sorted Lists</h3>
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 You are given the heads of two sorted linked lists list1 and list2.
 

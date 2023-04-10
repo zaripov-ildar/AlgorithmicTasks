@@ -1,6 +1,6 @@
 <h3>958. Check Completeness of a Binary Tree</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Given the root of a binary tree, determine if it is a complete binary tree.
 

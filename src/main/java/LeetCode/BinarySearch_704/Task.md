@@ -1,6 +1,6 @@
 ### 704. Binary Search
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 

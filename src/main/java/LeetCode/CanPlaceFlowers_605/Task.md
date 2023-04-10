@@ -1,6 +1,6 @@
 <h3>605. Can Place Flowers</h3>
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 You have a long flowerbed in which some plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
 

@@ -1,6 +1,6 @@
 <h3>1011. Capacity To Ship Packages Within D Days</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 A conveyor belt has packages that must be shipped from one port to another within days.
 

@@ -1,6 +1,6 @@
 ### 87. Scramble String
 
-<span style="color:red">Hard</span>
+<span style="background-color:red; color:white">Hard</span>
 
 We can scramble a string s to get a string t using the following algorithm:
 

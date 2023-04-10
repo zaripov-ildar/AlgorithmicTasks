@@ -1,6 +1,6 @@
 <h3>124. Binary Tree Maximum Path Sum</h3>
 
-<span style="color:red">Hard</span>
+<span style="background-color:red; color:white">Hard</span>
 
 A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting
 them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.

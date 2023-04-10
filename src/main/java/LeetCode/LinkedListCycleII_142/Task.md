@@ -1,6 +1,6 @@
 <h3>142. Linked List Cycle II</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
 

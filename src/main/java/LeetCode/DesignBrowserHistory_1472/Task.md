@@ -1,6 +1,6 @@
 <h3>1472. Design Browser History</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 You have a browser of one tab where you start on the homepage, and you can visit another url, get back in the history number of steps or move forward in the history number of steps.
 

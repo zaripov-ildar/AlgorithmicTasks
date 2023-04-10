@@ -1,6 +1,6 @@
 <h3>144. Binary Tree Preorder Traversal</h3>
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 Given the root of a binary tree, return the preorder traversal of its nodes' values.
 

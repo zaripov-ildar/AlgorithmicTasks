@@ -1,6 +1,6 @@
 <h3>2348. Number of Zero-Filled Subarrays</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Given an integer array nums, return the number of subarrays filled with 0.
 

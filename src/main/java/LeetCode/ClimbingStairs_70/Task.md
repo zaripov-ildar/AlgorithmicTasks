@@ -1,6 +1,6 @@
 ### 70. Climbing Stairs
 
-<span style="color:green">Easy</span>
+<span style="background-color:179848; color:white">Easy</span>
 
 You are climbing a staircase. It takes n steps to reach the top.
 

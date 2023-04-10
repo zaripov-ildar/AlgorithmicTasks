@@ -1,6 +1,6 @@
 <h3>188. Best Time to Buy and Sell Stock IV</h3>
 
-<span style="color:red">Hard</span>
+<span style="background-color:red; color:white">Hard</span>
 
 You are given an integer array prices where prices[i] is the price of a given stock on the ith day, and an integer k.
 

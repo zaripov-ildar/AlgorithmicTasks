@@ -1,6 +1,6 @@
 <h3>211. Design Add and Search Words Data Structure</h3>
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 Design a data structure that supports adding new words and finding if a string matches any previously added string.
 

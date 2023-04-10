@@ -1,6 +1,6 @@
 ### Best Sightseeing Pair
 
-<span style="color:yellow">Medium</span>
+<span style="background-color:e6cb78; color:white">Medium</span>
 
 You are given an integer array values where values[i] represents the value of the ith sightseeing spot.
 Two sightseeing spots i and j have a distance j - i between them.
