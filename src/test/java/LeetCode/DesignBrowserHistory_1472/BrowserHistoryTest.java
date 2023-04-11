@@ -1,6 +1,5 @@
 package LeetCode.DesignBrowserHistory_1472;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -16,11 +15,12 @@ class BrowserHistoryTest {
     public static Stream<Arguments> getParams() {
         return Stream.of(
                 Arguments.of(
-                        new String[]{"BrowserHistory", "visit", "visit", "visit", "back", "back", "forward", "visit", "forward", "back", "back"},
-                        new Object[]{"leetcode.com", "google.com", "facebook.com", "youtube.com", 1, 1, 1, "linkedin.com", 2, 2, 7},
-                        new String[]{null, null, null, null, "facebook.com", "google.com", "facebook.com", null, "linkedin.com", "google.com", "leetcode.com"}
-                )
-        );
+                        new String[] { "BrowserHistory", "visit", "visit", "visit", "back", "back", "forward", "visit",
+                                "forward", "back", "back" },
+                        new Object[] { "leetcode.com", "google.com", "facebook.com", "youtube.com", 1, 1, 1,
+                                "linkedin.com", 2, 2, 7 },
+                        new String[] { null, null, null, null, "facebook.com", "google.com", "facebook.com", null,
+                                "linkedin.com", "google.com", "leetcode.com" }));
     }
 
     @MethodSource("getParams")

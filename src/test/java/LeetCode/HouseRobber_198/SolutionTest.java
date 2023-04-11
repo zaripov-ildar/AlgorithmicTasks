@@ -1,7 +1,6 @@
 package LeetCode.HouseRobber_198;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -28,10 +27,9 @@ class SolutionTest {
 
     private static Stream<Arguments> testArguments() {
         return Stream.of(
-                Arguments.of(new int[]{1, 2, 3, 1}, 4),
-                Arguments.of(new int[]{1, 1}, 1),
-                Arguments.of(new int[]{2, 7, 9, 3, 1}, 12)
-        );
+                Arguments.of(new int[] { 1, 2, 3, 1 }, 4),
+                Arguments.of(new int[] { 1, 1 }, 1),
+                Arguments.of(new int[] { 2, 7, 9, 3, 1 }, 12));
     }
 
     @ParameterizedTest
@@ -40,22 +38,22 @@ class SolutionTest {
         assertEquals(expected, solution.rob(input));
     }
 
-//    @Test
-//    void recTimeTest() {
-//        long start = System.nanoTime();
-//        solution.robRec(arrForTimeTest);
-//        long diff = System.nanoTime() - start;
-//        System.out.println(diff);
-//        assertTrue(diff < 700000);
-//    }
-//
-//    @Test
-//    void loopTimeTest() {
-//        long start = System.nanoTime();
-//        solution.rob(arrForTimeTest);
-//        long diff = System.nanoTime() - start;
-//        System.out.println(diff);
-//        assertTrue(diff < 700000);
-//    }
+    // @Test
+    // void recTimeTest() {
+    // long start = System.nanoTime();
+    // solution.robRec(arrForTimeTest);
+    // long diff = System.nanoTime() - start;
+    // System.out.println(diff);
+    // assertTrue(diff < 700000);
+    // }
+    //
+    // @Test
+    // void loopTimeTest() {
+    // long start = System.nanoTime();
+    // solution.rob(arrForTimeTest);
+    // long diff = System.nanoTime() - start;
+    // System.out.println(diff);
+    // assertTrue(diff < 700000);
+    // }
 
 }

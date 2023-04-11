@@ -1,7 +1,5 @@
 package LeetCode.RotateArray_189;
 
-import java.util.Arrays;
-
 class Solution {
     public void rotate(int[] nums, int k) {
         int last = nums.length - 1;

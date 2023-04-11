@@ -18,19 +18,10 @@ class MyCircularQueueTest {
                 Arguments.of("aa", "a", false),
                 Arguments.of("aa", "a*", true),
                 Arguments.of("aa", ".*", true),
-                Arguments.of("salavat", "s*a*.t", true),
-                Arguments.of("aab", "c*a*b", false)
-        );
+                Arguments.of("salavat", "s*a*.t", false),
+                Arguments.of("aab", "c*a*b", true));
     }
 
-//    @Test
-//    void checkInsert(){
-//        char[] pattern = {'w','*','e','0','0'};
-//        char[] expected = {'w','*','.','e','0'};
-//        pattern = solution.insert(pattern,1);
-//        System.out.println(pattern);
-//        assertArrayEquals(expected, pattern);
-//    }
     @ParameterizedTest
     @MethodSource("testArguments")
     void check(String s, String p, boolean result) {

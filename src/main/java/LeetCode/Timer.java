@@ -6,10 +6,9 @@ public class Timer {
     int WARM = 50_000;
     int EXECUTIONS = 50_000;
 
-
     public void compareFunctions(int executions, Runnable... methods) {
         EXECUTIONS = executions;
-        warmUpJvm(()->{int a = 8*8;});
+        warmUpJvm(methods);
         Arrays.stream(methods).forEach(this::execute);
     }
 
@@ -31,7 +30,6 @@ public class Timer {
             method.run();
         }
         time = System.nanoTime() - time;
-        System.out.printf("Elapsed %,9.3f ms\n", time/1_000_000.0);
+        System.out.printf("Elapsed %,9.3f ms\n", time / 1_000_000.0);
     }
 }
-
