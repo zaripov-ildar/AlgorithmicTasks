@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-	private static final String fileName = "71. Simplify Path";
+	private static final String fileName = "946. Validate Stack Sequences";
 
 	public static void main(String[] args) throws IOException {
 		String packageName = getPackageName();
