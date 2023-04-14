@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-	private static final String fileName = "946. Validate Stack Sequences";
+	private static final String fileName = "516. Longest Palindromic Subsequence";
 
 	public static void main(String[] args) throws IOException {
 		String packageName = getPackageName();

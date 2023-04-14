@@ -15,7 +15,7 @@ class Solution {
                         char curSymbol = (char) ('1' + k);
                         if (isNumberValid(board, i, j, curSymbol)) {
                             board[i][j] = curSymbol;
-                            if (solve(board)){
+                            if (solve(board)) {
                                 return true;
                             } else {
                                 board[i][j] = '.';

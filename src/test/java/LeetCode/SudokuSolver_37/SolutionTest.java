@@ -1,11 +1,10 @@
 package LeetCode.SudokuSolver_37;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.util.Arrays;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,24 +12,38 @@ class SolutionTest {
 
     Solution solution = new Solution();
 
-    @Test
-    void test(){
-        char [][] board = new char[9][9];
-        board[0] = "53..7....".toCharArray();
-        board[1] = "6..195...".toCharArray();
-        board[2] = ".98....6.".toCharArray();
-        board[3] = "8...6...3".toCharArray();
-        board[4] = "4..8.3..1".toCharArray();
-        board[5] = "7...2...6".toCharArray();
-        board[6] = ".6....28.".toCharArray();
-        board[7] = "...419..5".toCharArray();
-        board[8] = "....8..79".toCharArray();
-        for (char[] chars : board) {
-            System.out.println(Arrays.toString(chars));
-        }
+    private static Stream<Arguments> getArguments() {
+        return Stream.of(
+                Arguments.of(
+                        new char[][] {
+                                { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+                                { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+                                { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+                                { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+                                { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+                                { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+                                { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+                                { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+                                { '.', '.', '.', '.', '8', '.', '.', '7', '9' } },
+
+                        new char[][] {
+                                { '5', '3', '4', '6', '7', '8', '9', '1', '2' },
+                                { '6', '7', '2', '1', '9', '5', '3', '4', '8' },
+                                { '1', '9', '8', '3', '4', '2', '5', '6', '7' },
+                                { '8', '5', '9', '7', '6', '1', '4', '2', '3' },
+                                { '4', '2', '6', '8', '5', '3', '7', '9', '1' },
+                                { '7', '1', '3', '9', '2', '4', '8', '5', '6' },
+                                { '9', '6', '1', '5', '3', '7', '2', '8', '4' },
+                                { '2', '8', '7', '4', '1', '9', '6', '3', '5' },
+                                { '3', '4', '5', '2', '8', '6', '1', '7', '9' } }));
+    }
+
+    @ParameterizedTest
+    @MethodSource("getArguments")
+    void test(char[][] board, char[][] expected) {
         solution.solveSudoku(board);
-        for (char[] chars : board) {
-            System.out.println(Arrays.toString(chars));
+        for (int i = 0; i < expected.length; i++) {
+            assertArrayEquals(board, expected);
         }
     }
 
