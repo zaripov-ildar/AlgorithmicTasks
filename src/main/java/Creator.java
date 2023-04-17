@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-	private static final String fileName = "516. Longest Palindromic Subsequence";
+	private static final String fileName = "1431. Kids With the Greatest Number of Candies";
 
 	public static void main(String[] args) throws IOException {
 		String packageName = getPackageName();
