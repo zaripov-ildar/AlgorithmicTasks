@@ -41,6 +41,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+.dbeaver/
 
 # External tool builders
 .externalToolBuilders/
