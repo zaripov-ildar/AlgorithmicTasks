@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-	private static final String fileName = "1372. Longest ZigZag Path in a Binary Tree";
+	private static final String fileName = "1046. Last Stone Weight";
 
 	public static void main(String[] args) throws IOException {
 		String packageName = getPackageName();
