@@ -33,8 +33,7 @@ class SolutionTest {
     void timeTest(TreeNode root, int expected) {
         Timer timer = new Timer();
         timer.compareFunctions(
-                () -> solution.getMinimumDifference(root),
-                () -> solution.getMinimumDifference2(root)
+                () -> solution.getMinimumDifference(root)
         );
     }
 }

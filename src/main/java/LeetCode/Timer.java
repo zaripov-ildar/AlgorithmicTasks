@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Timer {
     int WARM = 50_000;
-    int EXECUTIONS = 250_000;
+    int EXECUTIONS = 50_000;
 
     // public void compareFunctions(int executions, Runnable... methods) {
     // EXECUTIONS = executions;
@@ -16,6 +16,7 @@ public class Timer {
 
     public void compareFunctions(int executions, Runnable... methods) {
         EXECUTIONS = executions;
+        WARM = executions;
         warmUpJvm(methods);
 
         List<Thread> threads = new LinkedList<>();
