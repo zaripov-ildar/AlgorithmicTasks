@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Creator {
-	private static final String fileName = "530. Minimum Absolute Difference in BST";
+	private static final String fileName = "815. Bus Routes";
 
 	public static void main(String[] args) throws IOException {
 		String packageName = getPackageName();
@@ -11,16 +11,16 @@ public class Creator {
 		String solutionFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Solution.txt"));
 		Path solutionClassDir = getPath("main", packageName);
 		createFile(solutionClassDir, "Solution.java", String.format(solutionFilePattern, packageName));
-		System.out.println(solutionClassDir.toString() + "Solution.java is created");
+		System.out.println(solutionClassDir + "Solution.java is created");
 
 		String testFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/TestArguments.txt"));
 		Path testDir = getPath("test", packageName);
 		createFile(testDir, "SolutionTest.java", String.format(testFilePattern, packageName));
-		System.out.println(testDir.toString() + "SolutionTest.java is created");
+		System.out.println(testDir + "SolutionTest.java is created");
 
 		String markdownFilePattern = Files.readString(Path.of("src/main/java/CodeTemplates/Task.md"));
 		createFile(solutionClassDir, "Task.md", String.format(markdownFilePattern, fileName));
-		System.out.println(solutionClassDir.toString() + "Task.md is created");
+		System.out.println(solutionClassDir + "Task.md is created");
 	}
 
 	private static void createFile(Path dir, String fileName, String textOfFile) throws IOException {
