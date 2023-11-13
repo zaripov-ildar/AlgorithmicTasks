@@ -13,12 +13,6 @@ class Solution {
             }
         }
 
-//        if (!stopToBuses.containsKey(source) || !stopToBuses.containsKey(target)) {
-//            return -1;
-//        }
-
-
-
         Queue<Integer> queue = new LinkedList<>();
         Set<Integer> from = new HashSet<>();
         Set<Integer> visited = new HashSet<>();
