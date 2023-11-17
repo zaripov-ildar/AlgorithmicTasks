@@ -202,14 +202,22 @@ public class HandsomeMethods {
         return l1.equals(l2);
     }
 
-    public static boolean equals(int[][] arr1, int[][] arr2) {
-        if (arr1.length != arr2.length) {
-            return false;
-        }
+    public static boolean disorderEquals(int[][] arr1, int[][] arr2) {
+        if (arr1 == null || arr2 == null) return false;
+        if (arr1.length != arr2.length) return false;
         for (int i = 0; i < arr1.length; i++) {
-            if (!Arrays.equals(arr1[i], arr2[i])) {
-                return false;
-            }
+            int[] subArr1 = arr1[i];
+            int[] subArr2 = arr2[i];
+            if (!equals(subArr1, subArr2)) return false;
+        }
+        return true;
+    }
+
+    public static boolean equals(int[] arr1, int[] arr2) {
+        if (arr1 == null || arr2 == null) return false;
+        if (arr1.length != arr2.length) return false;
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) return false;
         }
         return true;
     }

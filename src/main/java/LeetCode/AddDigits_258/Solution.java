@@ -2,6 +2,6 @@ package LeetCode.AddDigits_258;
 
 class Solution {
     public int addDigits(int num) {
-        return 1 + (num-1) % 9;
+        return 1 + (num - 1) % 9;
     }
 }
